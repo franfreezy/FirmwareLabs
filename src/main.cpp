@@ -13,6 +13,7 @@
 SoftwareSerial LoraOnboard(12,13);
 volatile bool ledState = LOW;
 
+
 // IRAM_ATTR allows it to run faster
 void IRAM_ATTR handleButtonPress() {
   ledState = !ledState; // Toggle LED state
@@ -25,5 +26,6 @@ void setup() {
 }
 
 void loop() {
+  idle_sat();
 
 }
