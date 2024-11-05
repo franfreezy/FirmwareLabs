@@ -1,6 +1,8 @@
 //include modules
 #include <Arduino.h>
 #include <SoftwareSerial.h>
+#include <HTTPClient.h>
+#include <WiFi.h>
 #include "pins.h"
 #include "command.h"
 #include "idle.h"
