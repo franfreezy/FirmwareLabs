@@ -26,6 +26,6 @@ void setup() {
 }
 
 void loop() {
-  idle_sat();
+  idle_sat(LoraOnboard);
 
 }

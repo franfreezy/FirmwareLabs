@@ -3,7 +3,7 @@
 typedef struct __attribute__((packed))
 {
   String message;
-  
+
 } jkuatcomms;
 
 jkuatcomms idle_sat(SoftwareSerial &serial);
@@ -12,7 +12,7 @@ jkuatcomms idle_sat(SoftwareSerial &serial){
     digitalWrite(led1,HIGH);
     while (serial.available())
     {
-        String command=LoraOnboard.readStringUntil('~');
+        String command=serial.readStringUntil('~');
         if(command=="sleep"){
 
         }
