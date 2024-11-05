@@ -27,5 +27,6 @@ void setup() {
 
 void loop() {
   idle_sat(LoraOnboard);
+  transmit_sat(LoraOnboard, "hello");
 
 }
